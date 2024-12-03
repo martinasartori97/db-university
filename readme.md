@@ -16,4 +16,45 @@ per ogni appello d'Esame a cui lo Studente ha partecipato, è necessario memoriz
  - insegnanti
  - esami
  - studenti
- - voti 
+ 
+
+
+
+ # DIPARTIMENTI
+ - ID BIGINT - AI - PK
+ - NOME
+ - INDIRIZZO
+
+ # CORSI_LAUREA
+ - ID BIGINT - AI - PK 
+ - ID_DIPARTIMENTO
+
+ # CORSI
+ - ID BIGINT  - AI - PK
+ - NOME
+ - CREDITI
+ - ID_CORSO_LAUREA
+
+ # INSEGNANTI
+ - ID BIGINT -  AI - PK
+ - NOME
+ - COGNOME
+ - EMAIL
+ - NUMERO_TELEFONO
+
+ # ESAMI
+ - ID BIGINT - AI - PK
+ - CORSO_ID
+ - DATA
+ - TIPOLOGIA
+ - ID_INSEGNANTE
+
+ # STUDENTI
+ - ID BIGINT - AI - PK
+ - NOME
+ - COGNOME
+ - NUMERO_TELEFONO
+ - EMAIL
+ - ID_CORSO_LAUREA
+
+ 
