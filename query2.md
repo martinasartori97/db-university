@@ -48,13 +48,19 @@ ON `students`.`degree_id` = `degrees`.`id`
 WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
 
 2:
-select `degrees`.*
-from `degrees`
-join `departments` on `departments`.`id` = `degrees`.`department_id`
-where `degrees`.`level` = 'Magistrale'
-and `departments`.`name` = 'Dipartimento di Neuroscienze'
+SELECT `degrees`.*
+FROM `degrees`
+JOIN `departments` ON `departments`.`id` = `degrees`.`department_id`
+WHERE `degrees`.`level` = 'Magistrale'
+AND `departments`.`name` = 'Dipartimento di Neuroscienze'
 
 3:
+SELECT `courses`.`name` AS `Nome Corso`
+FROM `courses`
+JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id`
+JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
+WHERE `teachers`.`id` = '44'
+
 
 
 
