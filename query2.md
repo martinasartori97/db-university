@@ -40,6 +40,24 @@ GROUP BY `department_id`;
 
 # RESULTS
 1:
+SELECT `students`.*,
+`degrees`.`name` AS `degree_name`
+FROM `students`
+JOIN `degrees`
+ON `students`.`degree_id` = `degrees`.`id`
+WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
+
+2:
+select `degrees`.*
+from `degrees`
+join `departments` on `departments`.`id` = `degrees`.`department_id`
+where `degrees`.`level` = 'Magistrale'
+and `departments`.`name` = 'Dipartimento di Neuroscienze'
+
+3:
+
+
+
 
 
 
