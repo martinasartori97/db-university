@@ -29,8 +29,8 @@ from degrees
 where level = 'magistrale';
 
 - 7:
-?
-
+select count (id) as totale dipartimenti
+from departments
 
 
 - 8:
@@ -43,6 +43,7 @@ insert into db_university.students (degree_id, name, surname, date_of_birth, fis
 values (27,'martina','sartori','30-04-1997','srtmtn97d70f032j','2025-15-07','22222','dodo30@.com');
 
 - 10:
+
 
 
 
