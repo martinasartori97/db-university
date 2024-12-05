@@ -61,6 +61,20 @@ JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id`
 JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
 WHERE `teachers`.`id` = '44'
 
+4:
+SELECT `students`.*, `departments`.`name` AS `nome_dipartimento`, `degrees`.`name` AS `corsi di larurea`
+FROM `students`
+JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id` 
+JOIN `departments` ON `degrees`.`department_id` = `departments`.`id`
+ORDER BY `students`.`surname` ASC
+
+5:
+
+
+
+
+
+
 
 
 
